@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        
+
+        static void Main(string[] args)
+        {
+            
+            int[] Fibo =new int[13];
+            Fibo[0] = 0;
+            Fibo[1] = 1;
+            Fibo[2] = 1;
+            Fibo[3] = 2;
+            Fibo[4] = 3;
+            Fibo[5] = 5;
+            Fibo[6] = 8;
+            Fibo[7] = 13;
+            Fibo[8] = 21;
+            Fibo[9] = 34;
+            Fibo[10] = 55;
+            Fibo[11] = 89;
+            Fibo[12] = 144;
+
+                for (int i = 0; i < Fibo.Length; i++)
+            
+                Console.WriteLine(Fibo [i]+ " ");
+                Console.ReadKey();
+
+           
+            
+           
+            
+        }
+    }
+}
