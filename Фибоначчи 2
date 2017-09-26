@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Ling;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp12
+{
+  class Program
+{
+  static void Main(string[] args)
+{
+int[] Fibo = new int[13];
+Fibo[0] = 0;
+Fibo[1] = 1;
+Fibo[2] = 1;
+Fibo[3] = 2;
+Fibo[4] = 3;
+Fibo[5] = 5;
+Fibo[6] = 8;
+Fibo[7] = 13;
+Fibo[8] = 21;
+Fibo[9] = 34;
+Fibo[10] = 55;
+Fibo[11] = 89;
+Fibo[12] = 144;
+string k = Console.ReadLine();
+int n = Convert.ToInt32(k);
+for (int i = 0; i < n; i++)
+Console.Write(Fibo[i] + " ");
+Console.ReadKey();
+}
+}
+}
