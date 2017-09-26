@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        private static readonly int i;
+
+        static void Main(string[] args)
+        {
+            string k = Console.ReadLine();
+
+            int n = Convert.ToInt32(k);
+            int R = 1;
+            for (int i = 2; i <= n; i++) ;
+            R *= i;
+
+            Console.WriteLine(R);
+            Console.ReadLine();
+
+
+
+
+        }
+
+    }
+}
