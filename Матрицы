@@ -67,7 +67,7 @@ for (int i=0;i<x;i++)
 		}
 	
 	Console.Write(rez[i][j]+ "  ");
-	Console.WriteLine("Первая");
+	Console.WriteLine("Результат");
 	}
 	}
 		Console.ReadKey();
