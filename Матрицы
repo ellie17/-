@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+		string l = Console.ReadLine();
+		int x=Convert.Toint32(l);
+		Random R=new Random()	;
+		List<List<int>> matrix = new List<List<int>>();
+List<int> k=new List<int>();
+for(int i=0; i<x; i++)
+{
+	k=new List<int>();
+	for(int j=0;j<x;j++);
+	{
+		k.Add(R.Next(1,14));
+	}
+	matrix.Add(k);
+	}
+for (int i=0;i<x;i++)
+{
+	for(int j=0; j<x;j++)
+	Console.Write(matrix[i][j]+ "  ");
+	Console.WriteLine("Первая");
+}
+List<List<int>> matrix2 = new List<List<int>>();
+List<int> q=new List<int>();
+for(int i=0; i<x; i++)
+{
+	q=new List<int>();
+	for(int j=0;j<x;j++);
+	{
+		q.Add(R.Next(1,14));
+	}
+	matrix2.Add(q);
+}
+for (int i=0;i<x;i++)
+{
+	for(int j=0; j<x;j++)
+	Console.Write(matrix[i][j]+ "  ");
+	Console.WriteLine("Первая");
+}
+List<List<int>> rez = new List<List<int>>();
+List<int> w=new List<int>();
+for(int i=0; i<x; i++)
+{
+	w=new List<int>();
+	for(int j=0;j<x;j++);
+	{
+		w.Add(R.Next(1,14));
+	}
+}
+for (int i=0;i<x;i++)
+{
+	for(int j=0; j<x;j++)
+	{
+		for(int p=0;p<x;p++)
+		{
+			rez[i][j]+=matrix[i][p]*matrix2[p][j]
+		}
+	
+	Console.Write(matrix[i][j]+ "  ");
+	Console.WriteLine("Первая");
+	}
+	}
+		Console.ReadKey();
+		}
+	}
+}
