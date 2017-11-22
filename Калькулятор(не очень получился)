@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string q = Console.ReadLine();
+            string[] pol = q.Split(' ');
+            if (pol.Length == 2)
+            {
+                int n1;
+                bool result1 = Int32.TryParse(pol[0], out n1);
+                int n2;
+                bool result2 = Int32.TryParse(pol[1], out n2);
+                if (result1 && result2)
+                {
+                    Console.WriteLine((n1 + n2));
+                    Console.WriteLine((n1 -n2));
+                    Console.WriteLine((n1*n2));
+                    Console.WriteLine((Math.Pow(n1,n2)));
+                }
+                else
+                {
+                    Console.WriteLine("Ошибка");
+                    Console.WriteLine("A=" + n1);
+                    Console.WriteLine("B=" + n2);
+                }
+                Console.ReadKey();
+
+            }
+            if (pol.Length == 2)
+            {
+                double n1;
+                bool result1 = double.TryParse(pol[0], out n1);
+                double n2;
+                bool result2 = double.TryParse(pol[1], out n2);
+                if (result1&& result2)
+                {
+                    Console.WriteLine((n1 / n2));
+                    Console.WriteLine((n1 %n2));
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Ошибка");
+                    Console.WriteLine("A=" + n1);
+                    Console.WriteLine("B=" + n2);
+                }
+                Console.ReadKey();
+
+            }
+
+
+
+
+
+
+
+
+        }
+    }
+}
